@@ -28,7 +28,22 @@ class Controller extends BlockController
     {
         $this->requireAsset('javascript', 'jquery');
     }
+    
+    public function add()
+        {
+            $this->set("fID", '');
+            $this->set("fo", '');
+            $this->set("bgResponsive", '');
+            $this->set("bgFocalPoint", '');
+            $this->set("bgFocalPointX", '');
+            $this->set("bgFocalPointY", '');
+            $this->set("bgOverlayColor", '');
+            $this->set("bgFallbackColor", '');
+            $this->set("bgVignetteColor", '');
+            $this->set("elementalOverride", '');
+            $this->set("bgOverlayColorFallback", '');
 
+        }
     public function validate($args)
     {
         $error = Core::make('helper/validation/error');
