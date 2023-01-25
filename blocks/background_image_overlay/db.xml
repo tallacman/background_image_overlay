@@ -1,22 +1,28 @@
-<?xml version="1.0"?>
-<schema version="0.3">
-	<table name="btBackgroundImageOverlay">
-		<field name="bID" type="I">
-			<key />
-			<unsigned />
-		</field>
-        <field name="fID" type="I">
-            <unsigned />
-            <default value="0" />
-        </field>
-        <field name="bgResponsive" type="I"></field>
-        <field name="bgFocalPoint" type="I"></field>
-        <field name="bgFocalPointX" type="I"></field>
-        <field name="bgFocalPointY" type="I"></field>
-        <field name="bgOverlayColor" type="C"></field>
-        <field name="bgOverlayColorFallback" type="C"></field>
-        <field name="bgFallbackColor" type="C"></field>
-        <field name="bgVignetteColor" type="C"></field>
-        <field name="elementalOverride" type="I"></field>
-	</table>
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+  xmlns="http://www.concrete5.org/doctrine-xml/0.5"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 https://concretecms.github.io/doctrine-xml/doctrine-xml-0.5.xsd"
+>
+
+  <table name="btBackgroundImageOverlay">
+    <field name="bID" type="integer">
+      <unsigned/>
+      <key/>
+    </field>
+    <field name="fID" type="integer">
+      <unsigned/>
+      <default value="0"/>
+    </field>
+    <field name="bgResponsive" type="integer"/>
+    <field name="bgFocalPoint" type="integer"/>
+    <field name="bgFocalPointX" type="integer"/>
+    <field name="bgFocalPointY" type="integer"/>
+    <field name="bgOverlayColor" type="string" size="255"/>
+    <field name="bgOverlayColorFallback" type="string" size="255"/>
+    <field name="bgFallbackColor" type="string" size="255"/>
+    <field name="bgVignetteColor" type="string" size="255"/>
+    <field name="elementalOverride" type="integer"/>
+  </table>
+
 </schema>
